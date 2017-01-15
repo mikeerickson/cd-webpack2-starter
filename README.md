@@ -1,12 +1,11 @@
 # cd-webpack2-starter
 ### Webpack Starter (Node apps and UMD Modules)
 
-### Install with [npm](npmjs.org)
-
 ```sh
 - $ git clone https://github.com/mikeerickson/cd-webpack2-starter.git
 - cd app -or- cd module
 - npm install
+- npm run build
 ```
 
 ### Usage
