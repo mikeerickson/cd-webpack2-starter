@@ -1,0 +1,6 @@
+/node_modules/
+/logs/
+.idea/
+node_modules
+app/node_modules
+module/node_modules
