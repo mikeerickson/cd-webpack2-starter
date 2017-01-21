@@ -1,10 +1,8 @@
-// Using .babelrc to share settings across tools
-// ignore is important, if omitted it will wreak havoc on gulp tsaks
-
 {
-	"presets": ["es2015"],
-	"ignore": ["node_modules"],
-	"production": {
-		"presets": ["babili"]
-	}
+  "presets": ["es2015"],
+  "env": {
+    "production": {
+      "presets": ["babili"]
+    }
+  }
 }
