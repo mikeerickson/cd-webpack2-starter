@@ -13,6 +13,7 @@ import path  from 'path';
 import chalk from 'chalk';
 
 import ProgressBarPlugin from 'progress-bar-webpack-plugin'
+import BabiliPlugin      from 'babili-webpack-plugin';
 
 const config = {
   context: path.join(__dirname),
@@ -34,7 +35,8 @@ const config = {
       format: chalk.yellow.bold('  Building Node Application [:bar] ') + chalk.green.bold(':percent') + chalk.bold(' (:elapsed seconds)'),
       clear: true,
       summary: true
-    })
+    }),
+    new BabiliPlugin({})
   ],
   devServer: {
     stats: 'errors-only', // hide all those annoying warnings when webpack is building...
