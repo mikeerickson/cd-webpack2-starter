@@ -1,6 +1,8 @@
 import Calculator from './src/Calculator';
+import msg from 'cd-messenger';
 
 console.log('node app: ./index.js');
+msg.info('This is from cd-messenger');
 
 let calculator = new Calculator(5);
 calculator

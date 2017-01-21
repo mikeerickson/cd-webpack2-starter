@@ -25,7 +25,7 @@ const config = {
   },
   module: {
     rules: [
-      {test: /\.js$/, use: [{loader: 'babel-loader'},{loader: 'eslint-loader'}], exclude: /node_modules/},
+      {test: /\.js$/, loaders: ['babel-loader','eslint-loader'], exclude: /node_modules/},
       {test: /\s[a|c]ss$/, use: [{loader: 'sass-loader'}]}
     ]
   },

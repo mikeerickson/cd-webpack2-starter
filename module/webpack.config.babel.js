@@ -31,7 +31,9 @@ const config = {
   module: {
     rules: [
       {test: /\.js$/, use: [{loader: 'babel-loader'},{loader: 'eslint-loader'}], exclude: /node_modules/},
-      {test: /\s[a|c]ss$/, use: [{loader: 'sass-loader'}]}
+      {test: /\.json$/, loader: 'json-loader'},
+      {test: /.css$/, use: [{loader: 'style-loader'},{loader: 'css-loader'}]},
+      {test: /\s[a|c]ss$/, loader: 'sass-loader'}
     ]
   },
   plugins: [
